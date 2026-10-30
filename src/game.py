@@ -36,4 +36,12 @@ class RockPaperScissors:
         print(self.decide_winner(user_choice, computer_choice))
 
 game = RockPaperScissors('Ali')
-game.play()
+
+
+while True:
+    game.play()
+
+    continue_game = input('Do you want to play again? (Enter any key to play agin, enter q/Q to exit!)')
+    if continue_game.lower() == 'q':
+        break
+        
