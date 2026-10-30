@@ -35,13 +35,14 @@ class RockPaperScissors:
         print(f'computer_choices: {computer_choice}')
         print(self.decide_winner(user_choice, computer_choice))
 
-game = RockPaperScissors('Ali')
 
 
-while True:
-    game.play()
+if __name__ == '__main__':
+    game = RockPaperScissors('Yegane')
 
-    continue_game = input('Do you want to play again? (Enter any key to play agin, enter q/Q to exit!)')
-    if continue_game.lower() == 'q':
-        break
-        
+    while True:
+        game.play()
+
+        continue_game = input('Do you want to play again? (Enter any key to play agin, enter q/Q to exit!)')
+        if continue_game.lower() == 'q':
+            break
